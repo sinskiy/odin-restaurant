@@ -3,6 +3,7 @@
   "name": "odin-restaurant",
   "version": "1.0.0",
   "scripts": {
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "devDependencies": {
