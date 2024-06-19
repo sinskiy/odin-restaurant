@@ -2,5 +2,12 @@
   "private": "true",
   "name": "odin-restaurant",
   "version": "1.0.0",
-  "scripts": {}
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
