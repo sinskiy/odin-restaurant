@@ -7,7 +7,5 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
-  module: {
-    rules: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
-  },
+  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
 };
