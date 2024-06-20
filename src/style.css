@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "bevan";
-  src: url("./bevan.ttf");
+  /* change  */
+  src: url("./assets/bevan.ttf");
 }
 
 * {
@@ -73,10 +74,11 @@ ul {
 li {
   display: grid;
   justify-items: center;
+  align-content: center;
   grid-template-rows: repeat(2, min-content);
   gap: 0.5rem;
 
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem;
   max-width: 15rem;
   aspect-ratio: 1 / 1;
 
