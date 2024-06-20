@@ -17,6 +17,9 @@
 ul {
   list-style: none;
 }
+img {
+  max-width: 100%;
+}
 
 html {
   display: flex;
@@ -78,20 +81,37 @@ ul {
   gap: 1rem;
 }
 
-li {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  grid-template-rows: repeat(2, min-content);
-  gap: 0.5rem;
-
-  padding: 3rem;
+/* css surgery (i'm too lazy to add another class to non-menu) */
+ul:not(.menu) .card {
   max-width: 15rem;
   aspect-ratio: 1 / 1;
+}
+.card {
+  padding: 3rem;
 
   border-radius: 1rem;
   background-color: var(--primary);
   color: var(--on-on-background);
+}
+li {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-rows: repeat(2, max-content);
+  gap: 0.5rem;
+}
+.menu li {
+  align-content: space-between;
+}
+
+.menu div {
+  font-size: 1.25rem;
+  justify-self: start;
+  text-align: start;
+
+  display: grid;
+
+  margin-top: 0.5rem;
 }
 
 p {

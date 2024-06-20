@@ -1,6 +1,7 @@
 import createAbout from "./about";
 import handleLoad from "./handleLoad";
 import createHome from "./home";
+import createMenu from "./menu";
 import "./style.css";
 
 document.addEventListener("DOMContentLoaded", handleLoad);
@@ -14,6 +15,10 @@ function loadTab(tab) {
   switch (tab) {
     case "home":
       createHome();
+      return;
+
+    case "menu":
+      createMenu();
       return;
 
     case "about":

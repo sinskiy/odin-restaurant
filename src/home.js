@@ -65,6 +65,7 @@ export default function createHome() {
 
       function createListItem(listItemContent) {
         const li = document.createElement("li");
+        li.classList.add("card");
 
         const img = new Image();
         img.src = listItemContent.src;
