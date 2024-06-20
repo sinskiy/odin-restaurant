@@ -1,2 +1,4 @@
+import handleLoad from "./handleLoad";
 import "./style.css";
-import "./image.png";
+
+document.addEventListener("DOMContentLoaded", handleLoad);

@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 nav {
@@ -62,7 +62,7 @@ figcaption {
 
   color: var(--primary);
 
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 ul {
