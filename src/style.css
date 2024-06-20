@@ -1,8 +1,54 @@
+:root {
+  --background: #cae6ff;
+  --on-background: #28638a;
+  --on-on-background: white;
+}
+
+@font-face {
+  font-family: "bevan";
+  src: url("./bevan.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
 
-header nav {
+body {
+  font-family: "bevan";
+
+  background-color: var(--background);
+  color: var(--on-background);
+}
+
+header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.25rem 4rem;
+  border: none;
+
+  background-color: var(--on-background);
+  color: var(--on-on-background);
+  border-radius: 9999px;
+
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: 500;
+
+  transition: filter 150ms;
+}
+button:hover {
+  filter: brightness(1.25);
 }
