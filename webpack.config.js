@@ -14,6 +14,10 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
+        test: /\.(png|webp)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.(ttf|woff|woff2)$/i,
         type: "asset/resource",
       },
